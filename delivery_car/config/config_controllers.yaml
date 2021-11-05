@@ -1,0 +1,31 @@
+# Robot name goes here
+delivery_car:
+
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Rear Wheels Speed Controllers
+  left_rear_wheel_speed_control:
+    type: velocity_controllers/JointVelocityController
+    joint: left_rear_wheel_joint
+    pid: {p: 100, i: 0.1, d: 10.0}
+    
+  right_rear_wheel_speed_control:
+    type: velocity_controllers/JointVelocityController
+    joint: right_rear_wheel_joint
+    pid: {p: 100, i: 0.1, d: 10.0}
+    
+  # Front Wheels Position Controllers
+  left_front_wheel_pos_control:
+    type: effort_controllers/JointPositionController
+    joint: left_front_turn_joint
+    pid: {p: 100, i: 0.1, d: 10.0}
+  
+  right_front_wheel_pos_control:
+    type: effort_controllers/JointPositionController
+    joint: right_front_turn_joint
+    pid: {p: 100, i: 0.1, d: 10.0}
+
+  
