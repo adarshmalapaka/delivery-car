@@ -33,16 +33,3 @@ The robot car was physically modeled with inspiration from Dominos' autonomous d
 
 
 [^1]: Image Courtesy: https://www.motorauthority.com/news/1131910_domino-s-launches-autonomous-pizza-delivery-with-self-driving-robot-car
-
-<!-- ## Packages Used
-- Python 3.7.11
-- Matplotlib 3.5.0
-- NumPy 1.21.2
-
-  
-## Code Execution
-
-* Clone the repository
-  ```
-  git clone --recursive https://github.com/adarshmalapaka/autonomous-robotics.git
-  ```
