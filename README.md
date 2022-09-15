@@ -18,7 +18,7 @@ The robot car was physically modeled with inspiration from Dominos' autonomous d
   <img src="https://user-images.githubusercontent.com/40534801/190447697-565531a1-c546-49b5-85bf-ff634952051a.jpg" width="300" height="200">
 </p>
 
-
+All the SolidWorks CAD parts and assembly of the car are in the `/CAD` directory.
 
 ## Demos
 * ROS Publisher-Subscriber to move the car in straight-line and circular trajectories. 
@@ -31,5 +31,29 @@ The robot car was physically modeled with inspiration from Dominos' autonomous d
     <img src="https://user-images.githubusercontent.com/40534801/190458186-2dc943f1-d527-4841-8fad-7197e41cb4b3.gif" width="600" height="400">
   </p>
 
+## Running the Simulation:
+
+**1. For the teleop-demo:**	
+
+In a terminal window, run the follwoing to launch the car in given Gazebo world:
+		`roslaunch delivery_car template_launch.launch` 
+
+In another terminal window, run:
+    `rosrun delivery_car delivery_car_teleop.py`
+
+
+**2. For the publisher-subscriber demo:**	
+
+In a terminal window, run the follwoing to launch the car in the given Gazebo world:
+		`roslaunch delivery_car template_launch.launch` 
+
+In another terminal window, run the following for the publisher:
+    `rosrun delivery_car move_bot_pub.py`
+    
+In a third terminal window, run the following for the subscriber:
+    `rosrun delivery_car move_bot_sub.py`
+    
+    
+    
 
 [^1]: Image Courtesy: https://www.motorauthority.com/news/1131910_domino-s-launches-autonomous-pizza-delivery-with-self-driving-robot-car
