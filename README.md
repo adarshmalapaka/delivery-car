@@ -33,7 +33,7 @@ All the SolidWorks CAD parts and assembly of the car are in the `/CAD` directory
 
 ## Running the Simulation:
 
-Place the `delivery_car` ROS package in the `\src` directory of your catkin workspace and build it using `cd ~/catkin_ws && catkin_make`
+Place the `delivery_car` ROS package in the `/src` directory of your catkin workspace and build it using `cd ~/catkin_ws && catkin_make`
 
 **1. For the teleop-demo:**	
 
